@@ -14,26 +14,26 @@ data class PopularProducts(
 val popularProductList = listOf(
     PopularProducts(
         1,
-        "Sverom chair",
+        "Aeron chair",
         R.drawable.product_one,
-        "₹400"
+        "₹3000"
     ),
     PopularProducts(
         2,
-        "Norrviken chair and table",
+        "Taurus chair and table",
         R.drawable.product_two,
-        "₹999"
+        "₹5000"
     ),
     PopularProducts(
         3,
-        "Ektorp sofa",
+        "NilKamal 3-seat sofa",
         R.drawable.product_three,
-        "₹800"
+        "₹5488"
     ),
     PopularProducts(
         4,
-        "Jan Sflanaganvik sofa",
+        "IKEA KIVIK 3-seat sofa",
         R.drawable.product_four,
-        "₹700"
+        "₹7099"
     )
 )

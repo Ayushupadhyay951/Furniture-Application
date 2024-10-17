@@ -54,7 +54,7 @@ import com.project.furnitureapplication.R
 import com.project.furnitureapplication.components.SpacerHeight
 import com.project.furnitureapplication.components.SpacerWidth
 import com.project.furnitureapplication.components.popularProductList
-import com.project.furnitureapplication.navigations.Checkout
+import com.project.furnitureapplication.navigations.Routes
 import com.project.furnitureapplication.ui.theme.Background_1
 import com.project.furnitureapplication.ui.theme.DarkOrange
 import com.project.furnitureapplication.ui.theme.GrayColor
@@ -110,7 +110,7 @@ fun ProductDetailScreen(
                     }
                     SpacerHeight()
                     Text(
-                        text = stringResource(id = R.string.lorem_ipsum_dolor_sit_amet_consectetur_adipiscing_elit_etiam_at_mi_vitae_augue_feugiat_scelerisque_in_a_eros),
+                        text = stringResource(id = R.string.pro_desc),
                         style = TextStyle(
                             fontSize = 14.sp,
                             fontWeight = FontWeight.W400,
@@ -126,7 +126,7 @@ fun ProductDetailScreen(
         }
 
         BottomBarItem(modifier = Modifier.align(BottomCenter)) {
-            navHostController.navigate(Checkout)
+            navHostController.navigate(Routes.check_out_screen)
         }
 
     }

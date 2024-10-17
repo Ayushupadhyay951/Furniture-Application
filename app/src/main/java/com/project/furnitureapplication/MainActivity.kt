@@ -26,17 +26,9 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             FurnitureApplicationTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Box(modifier = Modifier.fillMaxSize().paint(
-                        painterResource(id=R.drawable.signfrd),
-                        contentScale = ContentScale.FillBounds
-                    )){
-                        val navController= rememberNavController()
-                        FurnitureNavigation(navController )
-
-                    }
-                }
+                FurnitureNavigation()
             }
         }
     }
 }
+

@@ -63,7 +63,7 @@ import com.project.furnitureapplication.components.SpacerWidth
 import com.project.furnitureapplication.components.categoryList
 import com.project.furnitureapplication.components.popularProductList
 import com.project.furnitureapplication.components.roomList
-import com.project.furnitureapplication.navigations.ProductDetail
+import com.project.furnitureapplication.navigations.Routes
 import com.project.furnitureapplication.ui.theme.DarkOrange
 import com.project.furnitureapplication.ui.theme.LightGray_1
 import com.project.furnitureapplication.ui.theme.TextColor_1
@@ -89,7 +89,7 @@ fun HomeScreen(
             CategoryRow()
             SpacerHeight(20.dp)
             PopularRow{
-                navHostController.navigate(ProductDetail)
+                navHostController.navigate(Routes.product_detail_screen)
             }
             BannerRow()
             Rooms()
